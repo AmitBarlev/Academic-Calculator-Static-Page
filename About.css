@@ -1,0 +1,81 @@
+body {
+    background-color : whitesmoke;
+}
+h1 {
+    color:cadetblue;
+    margin-left : 5px;
+    text-decoration: underline;
+    font-style:oblique;
+}
+h2 {
+    margin-left : 3px;
+    font-size: 25px;
+
+}
+h3 {
+    font-weight: bold;
+    text-decoration: underline;
+}
+ol {
+    counter-reset:item;
+}
+li {display:block;}
+li:before {
+    content: counters(item, ".")" ";
+    counter-increment: item;
+}
+.contents{
+    border-style:solid;
+    background-color: azure;
+    width:13%;
+
+}
+div {
+    width: 14%;
+    margin-top : 10px;
+    margin-right : 20px;
+    float :left;
+}
+p {
+    width: 80%;
+    margin-left : 3px;
+    border-radius: 5px;
+    border-color: lightgray;
+    font-size: 20px;
+}
+.sP {
+ padding:10px;
+}
+.paragraphPicture {
+    width: 25%;
+
+}
+table, th, td {
+    border-style:groove;
+    border-color: black;
+    background-color:beige;
+    border-collapse: collapse;
+    text-align: center;
+    padding:3px;
+}
+.one {background-color: #3B3735}
+.two {background-color: #AF181F}
+.three {background-color: #016363}
+.four {background-color: #4B0082}
+.five {background-color: #FFCC00}
+.six {background-color: #6495ED}
+.seven {background-color: #006800}
+.eight {background-color: #8CA8A4}
+.nine {background-color: #F28500}
+.ten {background-color: #191230}
+.eleven {background-color: #660099}
+.twelve {background-color: #3B3735}
+.thirteen {background-color: #E0C665}
+.fourteen {background-color: #9F1719}
+.fifteen {background-color: #69C3DD}
+.sixteen {background-color: #30633D}
+.seventeen {background-color: #ccc2cf}
+.eighteen {background-color: #194D7D}
+.nineteen {background-color: #943C30}
+.twenty {background-color: #6E551A}
+.twenty-one {background-color: #1a5367}

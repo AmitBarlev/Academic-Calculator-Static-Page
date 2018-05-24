@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Academic Calculator</title>
+    <meta name="Calculator" content="Academic Calculator">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Libs/bootstrap.css">
+    <script src="Libs/http_code.jquery.com_jquery-2.0.0.js"></script>
+    <script src="Libs/bootstrap.js"></script>
+    <link rel="stylesheet" href="Calculate.css">
+</head>
+<body>
+    <script src="calculatorLogic.js"></script>
+    <div><h1>Academic Calculator</h1></div>
+    <div class="container-fluid">
+        <hr>
+        <div class="row">
+            <form>
+                <div class ="col-lg-1 col-md-2 col-sm-2 col-xs-12" >
+                    <input class="personal" placeholder="First Name:" data-toggle="popover"
+                         data-content="Please Fill First Name Correctly" onblur="fieldValidation(this)"
+                        data-placement="top">
+                </div>
+                <div class ="col-lg-1 col-md-2 col-sm-2 col-xs-12">
+                    <input class="personal" placeholder="Last Name:" data-toggle="popover"
+                     data-content="Please Fill Last Name Correctly" onblur="fieldValidation(this)"
+                    data-placement="top">
+                </div>
+                <div class = "col-lg-1 col-md-2 col-sm-2 col-xs-12">
+                    <input class="personal" placeholder="Academic Institute:" data-trigger="popover"
+                     data-content="Please Fill Academic Institute Correctly" onblur="fieldValidation(this)"
+                    data-placement="top">
+                </div>
+                <div class = "col-lg-1 col-md-2 col-sm-2 col-xs-12">
+                    <input class="personal" placeholder="School:" data-trigger="popover"
+                   data-content="Please School Institute Correctly" onblur="fieldValidation(this)"
+                    data-placement="top">
+                </div>
+                <div class = "col-lg-1 col-md-2 col-sm-2 col-xs-12 start-btn">
+                    <input type="button" value="submit" class="submit" onclick="formValidation()">
+                </div>
+            </form>
+        </div>
+        <hr>
+        <div class="courses"></div>
+    </div>
+</body>
+</html>
